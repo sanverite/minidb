@@ -7,9 +7,7 @@ fn main() {
         print!("minidb> ");
         io::stdout().flush().unwrap();
         line.clear();
-        let bytes = io::stdin()
-            .read_line(&mut line)
-            .unwrap();
+        let bytes = io::stdin().read_line(&mut line).unwrap();
 
         if bytes == 0 {
             break; // EOF: Ctrl-D
